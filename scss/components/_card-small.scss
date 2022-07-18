@@ -1,0 +1,56 @@
+// ___________________________________________________________________
+// Card-Small Styles
+// ___________________________________________________________________
+  
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.stats__card {
+  background-color: var(--bg-card);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 1rem;
+  padding: 1.6875rem 1.875rem 1.5rem 1.5rem;
+
+  &:hover {
+    background-color: var(--bg-card-hover);
+    cursor: pointer;
+  }
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 0;
+  }
+}
+
+.stats__icon {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  margin-bottom: 2.5rem;
+}
+
+.stats__total {
+  grid-column: 1;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  span:first-child {
+    margin-bottom: 1.625rem;
+  }
+
+  span:last-child {
+    @include text($text-XL, $font-weight--bold);
+    color: var(--text-primary);
+    line-height: $line-height__default;
+  }
+}
+
+.stats__metrics {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}

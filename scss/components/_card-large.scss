@@ -1,0 +1,106 @@
+// ___________________________________________________________________
+// Card-Large Styles
+// ___________________________________________________________________
+  
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.socialmedia__card {
+ background-color: var(--bg-card);
+ border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ min-width: 20.375rem;
+ padding-top: 2rem;
+ position: relative;
+
+ &:hover {
+  background-color: var(--bg-card-hover);
+  cursor: pointer;
+ }
+
+ &::before {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  content: '';
+  height: 4px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+ }
+
+ @media #{$brkpoint-md} {
+  min-width: 15.9375rem;
+ }
+}
+
+.socialmedia__card.facebook::before {
+  background-color: $facebook;
+}
+
+.socialmedia__card.twitter::before {
+  background-color: $twitter;
+}
+
+.socialmedia__card.instagram::before {
+  background: $instagram;
+}
+
+.socialmedia__card.youtube::before {
+  background-color: $youtube; 
+}
+
+.socialmedia__user-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.75rem;
+
+  img {
+    margin-right: 0.5rem;
+  }
+}
+
+.socialmedia__total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5625rem;
+  text-align: center;
+
+  span:first-child {
+    @include text($text-jumbo, $font-weight--bold);
+    color: var(--text-primary);
+    letter-spacing: -2px;
+    line-height: $line-height__L;
+    margin-bottom: 0.5625rem;
+  }
+
+  span:last-child {
+    @include text($text-XS, $font-weight--regular);
+    color: var(--text-secondary);
+    letter-spacing: 5px;
+    line-height: $line-height__default;
+    text-transform: uppercase;
+  }
+}
+
+.arrow img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.socialmedia__metrics {
+  padding-bottom: 1.5rem;
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.negative {
+  color: var(--negative);
+}

@@ -1,0 +1,80 @@
+// ___________________________________________________________________
+// Switch Styles
+// ___________________________________________________________________
+  
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.switch-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.25rem;
+  padding-top: 1rem;
+
+  span {
+    @include text(0.875rem, $font-weight--bold);
+    color: var(--text-secondary);
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$brkpoint-md} {
+      margin-right: 0.75rem;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover span {
+    color: var(--text-focus);
+  }
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.switch__btn {
+  @include size(48px, 24px);
+  background: var(--bg-toggle);
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background: var(--toggle-focus);
+    filter: contrast(150%);
+    outline: auto 2px Highlight; // for non-webkit browsers
+    outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+  }
+}
+
+.switch__circle {
+  display: block;
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
+  background: var(--bg-card);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  &:hover {
+    background: var(--circle-toggle);
+  }
+}
+
+.switch__btn[aria-pressed="true"] .switch__circle,
+.switch__btn[aria-pressed="false"] .switch__circle {
+  transition: all 0.25s ease;
+}
+
+.light-mode-on {
+  left: 27px;
+}

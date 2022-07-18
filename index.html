@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="main-header container">
+        <div class="heading">
+          <h1>Social Media Dashboard</h1>
+          <h2>Total Followers: 23,004</h2>
+        </div>
+        <div class="switch-container">
+          <span class="switch__label">Dark Mode</span>
+          <button class="switch__btn" type="button" aria-label="toggle switch" aria-pressed="false">
+            <span class="switch__circle" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="socialmedia">
+        <article class="socialmedia__card facebook">
+          <a class="socialmedia__user-link" href="#" target="_blank">
+            <img class="socialmedia__icon" src="images/icon-facebook.svg" alt="Facebook">
+            <span class="socialmedia__user-id">@nathanf</span>
+          </a>
+          <h3 class="socialmedia__total">
+            <span>1987</span>
+            <span>Followers</span>
+          </h3>
+          <p class="socialmedia__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">12 Today</span>
+          </p>
+        </article>
+        <article class="socialmedia__card twitter">
+          <a class="socialmedia__user-link" href="#" target="_blank">
+            <img class="socialmedia__icon" src="images/icon-twitter.svg" alt="Twitter">
+            <span class="socialmedia__user-id">@nathanf</span>
+          </a>
+          <h3 class="socialmedia__total">
+            <span>1044</span>
+            <span>Followers</span>
+          </h3>
+          <p class="socialmedia__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">99 Today</span>
+          </p>
+        </article>
+        <article class="socialmedia__card instagram">
+          <a class="socialmedia__user-link" href="#" target="_blank">
+            <img class="socialmedia__icon" src="images/icon-instagram.svg" alt="Instagram">
+            <span class="socialmedia__user-id">@realnathanf</span>
+          </a>
+          <h3 class="socialmedia__total">
+            <span>11k</span>
+            <span>Followers</span>
+          </h3>
+          <p class="socialmedia__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">1099 Today</span>
+          </p>
+        </article>
+        <article class="socialmedia__card youtube">
+          <a class="socialmedia__user-link" href="" target="_blank">
+            <img class="socialmedia__icon" src="images/icon-youtube.svg" alt="YouTube">
+            <span class="socialmedia__user-id">Nathan F.</span>
+          </a>
+          <h3 class="socialmedia__total">
+            <span>8239</span>
+            <span>Subscribers</span>
+          </h3>
+          <p class="socialmedia__metrics">
+            <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
+            <span class="negative">144 Today</span>
+          </p>
+        </article>
+      </div>
+      <div class="stats">
+        <h4>Overview - Today</h4>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-facebook.svg" alt="Facebook">
+          <h5 class="stats__total">
+            <span>Page Views</span>
+            <span>87</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">3%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-facebook.svg" alt="Facebook">
+          <h5 class="stats__total">
+            <span>Likes</span>
+            <span>52</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
+            <span class="negative">2%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-instagram.svg" alt="Instagram">
+          <h5 class="stats__total">
+            <span>Likes</span>
+            <span>5462</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">2257%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-instagram.svg" alt="Instagram">
+          <h5 class="stats__total">
+            <span>Profile Views</span>
+            <span>52k</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">1375%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-twitter.svg" alt="Twitter">
+          <h5 class="stats__total">
+            <span>Retweets</span>
+            <span>117</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">303%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-twitter.svg" alt="Twitter">
+          <h5 class="stats__total">
+            <span>Likes</span>
+            <span>507</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
+            <span class="positive">553%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-youtube.svg" alt="YouTube">
+          <h5 class="stats__total">
+            <span>Likes</span>
+            <span>107</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
+            <span class="negative">19%</span>
+          </p>
+        </article>
+        <article class="stats__card">
+          <img class="stats__icon" src="images/icon-youtube.svg" alt="YouTube">
+          <h5 class="stats__total">
+            <span>Total Views</span>
+            <span>1407</span>
+          </h5>
+          <p class="stats__metrics">
+            <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
+            <span class="negative">12%</span>
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="main-footer container">
+        <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/kamaladebayo" target="_blank">Kamal</a>.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
